@@ -1,0 +1,217 @@
+
+h1 {
+    color: purple;
+    text-align: center;
+    text-shadow: 4px 5px 5px rgb(187, 143, 143);
+}
+
+.welcome{
+    text-align: center;
+}
+
+
+.f_word {
+    color:rgba(91, 221, 4, 0.966);
+}
+#paragraghs {
+    text-align: center;
+    color: rgb(12, 212, 226)
+}
+#header {
+    color: rgb(174, 114, 53);
+}
+.container {
+    border: 4px dotted silver;
+    margin: 50px 1000px 20px 0px;
+    padding: 69px 6px 20px 20px;
+}
+.box {
+    height: 200px;
+    width:200px;
+    background: red;
+    margin: 10px;
+}
+
+nav {
+background: orange;
+text-align: center
+;
+}
+a {
+    text-decoration-line:none ;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display:inline-block;
+    padding:30px
+}
+
+img {
+    max-width: 100%;
+}
+ img {
+    box-shadow: 10px 20px 20px 20px grey;
+ }
+
+ .flex{
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+ }
+
+ @keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotation {
+    0%{transform:rotate(90deg);}
+    50% {transform:rotate(180deg);}
+    100%{transform:rotate(360deg);}
+}
+#box2 {
+    animation-name: rotation;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out ;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, pink, rgb(0, 255, 225), purple);
+}
+
+@keyframes getbigger {
+    0% {transform: scale(1);}
+    20% {transform: scale(1.5);}
+    40%{transform: scale(3);}
+    50% {transform: scale(5);}
+    100% {transform: scale(1);}
+}
+#box3{
+    animation: getbigger 20s infinite;
+    border-radius: 50%;
+    background: orange;
+}
+@keyframes changecolors {
+    0% {background-color: aqua;}
+    25% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: black;}
+}
+#box4{
+    animation: changecolors 4s infinite ;
+}
+
+@keyframes movebox {
+    0% {left:0px; top:0px;}
+    20% {left: 100px; top:0px;}
+    50% {left:100px; top:30px;}
+    75% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+#box5{
+    position: relative;
+    background:purple;
+    animation: movebox 3s infinite;
+}
+
+
+html{
+    background-image: radial-gradient( white, aqua, yellow, purple);
+}
+
+form input, textarea,button {
+    display: block;
+    margin: 30px;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.contact-box{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: white;
+    color: #444;
+  }
+
+  .Box {
+    background-color: white;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+  .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .c {
+    grid-column: col / span 5;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, orange, white);
+  }
+  .d {
+    grid-column: col 2 / span  1 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+  }
+
+  .e {
+    grid-column: col 4 / span  1;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    background-image: linear-gradient(white, purple, orange);
+  }
